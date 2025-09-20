@@ -1,0 +1,25 @@
+---
+title: Testing some metadata construction
+---
+
+```{r}
+library(HubPub)
+library(ExperimentHub)
+library(ExperimentHubData)
+```
+
+```{r}
+hub <- ExperimentHub()
+test <- query(hub, c("Microbiome"))
+test[1, ]
+```
+
+```{r}
+library(AnnotationHub)
+library(AnnotationHubData)
+```
+
+```{r}
+getValidSourceTypes()
+makeExperimentHubMetadata(".")
+```
