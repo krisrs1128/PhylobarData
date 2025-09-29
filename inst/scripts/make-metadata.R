@@ -1,7 +1,7 @@
 # A script to make the metadata.csv file located in inst/extdata of the package.
-# See ?AnnotationHubData::makeAnnotationHubMetadata for a description of the 
-# metadata.csv file, expected fields and data types. This 
-# AnnotationHubData::makeAnnotationHubMetadata() function can be used to 
+# See ?AnnotationHubData::makeAnnotationHubMetadata for a description of the
+# metadata.csv file, expected fields and data types. This
+# AnnotationHubData::makeAnnotationHubMetadata() function can be used to
 # validate the metadata.csv file before submitting the package.
 
 # Create a data.frame with the required column names
@@ -11,7 +11,8 @@ metadata_df <- data.frame(
   BiocVersion = "3.23",
   Genome = NA,
   SourceType = "RDS",
-  SourceUrl = character(0), # add a zenodo link
+  SourceUrl = "https://doi.org/10.5281/zenodo.17179980/", # add a zenodo link
+  SourceVersion = "0.99.0",
   Species = "Homo sapiens",
   TaxonomyId = 9606,
   Coordinate_1_based = 1,
@@ -19,7 +20,7 @@ metadata_df <- data.frame(
   Maintainer = "ksankaran@wisc.edu",
   RDataClass = "phyloseq",
   DispatchClass = "Rds",
-  Location_Prefix = character(0), # put link to the zenodo direct download link
+  Location_Prefix = "https://zenodo.org/records/17179980/files/",
   RDataPath = "zhang2023-ps.rds",
   Tags = "Microbiome:MicrobiomeData:ReproducibleResearch"
 )
