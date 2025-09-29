@@ -2,13 +2,18 @@ Package: CancerOralMicrobiome
 Title: Longitudinal Oral Microbiome phyloseq Data from Zhang et al. (2023).
 Version: 0.99.0
 Date: 2025-09-19
-Authors@R: 
-    person("Kris", "Sankaran", , "ksankaran@wisc.edu", role = c("aut", "cre"))
-Description: Phyloseq data from the oral cancer microbiome study, "Influence of oral microbiome on longitudinal patterns of oral mucositis severity in patients with squamous cell carcinoma of the head and neck" by Zheng et al. (2023).  License: Artistic-2.0
+Authors@R:
+    c(
+        person("Kris", "Sankaran", , "ksankaran@wisc.edu", role = c("aut", "cre", "fnd"), comment = c(ORCID = "0000-0002-9415-1971")),
+        person("Megan", "Kuo", , "", role = c("aut")),
+        person("Jiadong", "Mao", , "", role = c("aut")),
+        person("Saritha", "Kodikara", , "", role = c("aut"))
+    )
+Description: These data can be use to reproduce the results in the paper, "Oral microbial signatures of head and neck cancer patients with diverse longitudinal oral mucositis severity patterns," which analyzes a data set originally generated in "Influence of oral microbiome on longitudinal patterns of oral mucositis severity in patients with squamous cell carcinoma of the head and neck." Code to reproduce the examples can be found at the OMScoreAnalysis repository on Github: https://github.com/SarithaKodikara/OMScoreAnalysis. The RDS object zhang2023-ps.rds is a phyloseq object that combines all other microbiome and sample information in this upload.
 BugReports: https://support.bioconductor.org/t/OralCancerMicrobiome
-Imports: 
+Imports:
     ExperimentHub
-Suggests: 
+Suggests:
     ExperimentHubData,
     testthat (>= 3.0.0)
 biocViews: ExperimentHub, SequencingData
