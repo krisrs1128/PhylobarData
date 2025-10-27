@@ -1,4 +1,4 @@
-# CancerOralMicrobiome
+# PhylobarData
 
 These data can be use to reproduce the results in the paper,
 "[Oral microbial signatures of head and neck cancer patients with diverse longitudinal oral mucositis severity patterns](https://www.biorxiv.org/content/10.1101/2025.07.15.665024v1.full)" which analyzes a data set originally generated in
